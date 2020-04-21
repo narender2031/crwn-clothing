@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route } from 'react-router-dom'
+
 import './App.css';
 
 import Homepage from './page/Homepage.component';
@@ -6,7 +8,7 @@ import Homepage from './page/Homepage.component';
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <Route exact path='/' component={Homepage} />
     </div>
   );
 }
